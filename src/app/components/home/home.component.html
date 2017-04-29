@@ -1,0 +1,136 @@
+<div class="logos hidden-sm-down">
+  <img class="custom-img-thumbnail" src="./assets/img/{{logo}}.png" *ngFor="let logo of skills; let i = index"
+  style="position:absolute; background-color: rgba(0,0,0,0);border:0;" [style.margin-top]="positions[i].top + px" [style.left]="positions[i].left + px">
+</div>
+<div class="container welcome-div">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <img src="./assets/img/me.jpg" class="img-fluid img-responsive img-thumbnail circle">
+    </div>
+    <div class="col-md-6">
+      <h1 class="zoom-word">Hi,</h1>
+      <h1 class="zoom-word">I'm Manuel,</h1>
+      <h1 class="zoom-word">fullstack developer.</h1>
+      <h6>Tech enthusiast / Coffe addict / Rollerblader</h6>
+      <br>
+      <a href="mailto:zambra4a@gmail.com" class="btn btn-danger contact-button" ><i class="fa fa-envelope"></i> Contact me!</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center scroll-to-about hidden-sm-down">
+      <a scrollTo href="#about-me" class="btn btn-outline-success"><i class="fa fa-arrow-down"></i> Scroll to see more</a>
+    </div>
+  </div>
+</div>
+
+  <div class="about-me" id="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Want to know more about me?</h1>
+          <h5>How did I get where I am now?</h5>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-md-6 text-justify">
+          <p>I was born in Seville, a city located in the south of Spain, in Andalusia. When I was a child, I was constantly moving to different cities because of my parents job. I got to know a lot of
+            people and discovered a lot of different places. Then, when I was old enough to start reading books, I became a reading addict. I spent hours reading every day, and I loved it so much that I
+            decided I wanted to be a literature teacher. And that was the idea, until I got my first computer when I was 13. From that moment on, everything changed. I discovered a whole new world of possibilities.
+            At the begining, I broke my PC hundreds of times, and everytime I broke it, I sent it to a local PC shop to get it fixed.
+          </p>
+        </div>
+        <div class="col-md-6 text-justify">
+          <p> Then, I learnt to fix it by myself, and it was wonderful. No more money spent on that. After that, I began playing games on my computer and, soon after that, I realized I did not want to just
+            play a game, I wanted to create items for the game, I wanted to make my own enemies. So, I did it. I learnt how to modify the game files so I was able to add things to the game. That was insane for me. It seemed
+            like magic. Then, I continued learning things about programming and I decided I no longer wanted to be a teacher, I wanted to be a programmer, a virtual magician, someone who creates things from
+            nothing. Since then, I have never stopped learning, experimenting and improving my skills. <strong>Now, I am a developer, and I love doing what I do.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="skills-div">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>My skills</h1>
+        <h5>What I do in projects</h5>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 bottom-20">
+        <div class="text-center">
+          <i class="fa fa-lightbulb-o fa-5x idea-color"></i>
+          <div class="card-block">
+            <h4 class="card-title">Ideas</h4>
+            <p class="card-text">I collaborate with my team to give ideas and find the best possible solution for our task. Here is where all the magic starts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 bottom-20">
+        <div class="text-center">
+          <i class="fa fa-desktop fa-5x ux-color"></i>
+          <div class="card-block">
+            <h4 class="card-title">Design</h4>
+            <p class="card-text">I participate in the design process to try giving our customer the best possible user experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 bottom-20">
+        <div class="text-center">
+          <i class="fa fa-code fa-5x code-color"></i>
+          <div class="card-block">
+            <h4 class="card-title">Code</h4>
+            <p class="card-text">Here is where I live. I love to code, in any given language. And I love to find clear and optimal code to do the magic, to create.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="social-media">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>See my social media</h1>
+        <h5>Discover more things about me</h5>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 bottom-20 clickable" (click)="openLinkedin()">
+        <div class="text-center">
+          <i class="fa fa-linkedin-square fa-5x linkedin-color"></i>
+          <div class="card-block">
+            <h4 class="card-title">Linkedin</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 bottom-20 clickable" (click)="openInstagram()">
+        <div class="text-center">
+          <i class="fa fa-instagram fa-5x"></i>
+          <div class="card-block">
+            <h4 class="card-title">Instagram</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 bottom-20 clickable" (click)="openTwitter()">
+        <div class="text-center">
+          <i class="fa fa-twitter fa-5x twitter-color"></i>
+          <div class="card-block">
+            <h4 class="card-title">Twitter</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p><small>Made by Manuel Zambrano ©2017</small></p>
+      </div>
+    </div>
+  </div>
+</div>
