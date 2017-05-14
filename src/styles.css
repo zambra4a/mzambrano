@@ -1,5 +1,6 @@
 body {
   background-color: #2c3e50;
+
 }
 
 .custom-img-thumbnail {
@@ -20,7 +21,7 @@ body {
     }
 }
 
-.logos {
+.back {
   position:absolute;
   top:0;
   left:0;
@@ -28,12 +29,16 @@ body {
   height:100%;
   z-index:-1;
   display: block;
+  background-image: url(assets/img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .welcome-div {
   min-height: 100vh;
   color: white;
   padding-top: 20vh;
+
 }
 .contact-button{
   margin-bottom: 10px;
@@ -52,7 +57,7 @@ body {
 .about-me {
   padding-top: 20px;
   min-height: 500px;
-  background-color: #CFD8DC;
+  background-color: #eee;
 }
 .about-me .container{
   margin-top: 50px;
@@ -60,7 +65,7 @@ body {
 .social-media {
   padding-top: 20px;
   min-height: 400px;
-  background-color: #CFD8DC;
+  background-color: #eee;
 }
 .social-media .container{
   margin-top: 50px;
