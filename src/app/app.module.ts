@@ -9,11 +9,15 @@ import { HomeComponent } from './components/home/home.component';
 
 import {ScrollToModule} from 'ng2-scroll-to';
 import { app_routing } from 'app/app.routes';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
